@@ -1,0 +1,24 @@
+$text: #373535;
+$blue: #32a2e3;
+
+
+@mixin o300 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+@mixin o400 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+@mixin o700 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+@mixin d400{
+  font-family: "DaxCondensed-Regular", sans-serif;
+}
+@mixin d300{
+  font-family: "DaxCondensed-Light", sans-serif;
+}
