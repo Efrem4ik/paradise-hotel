@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,211 @@
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div class="wrapper">
     <div class="content">
       <!-- start header -->
       <header class="header">
-        
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <img src="images/logo.svg" alt="Logotype">
+            </div>
+            <div class="header__menu">
+              <ul class="menu__list">
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Rooms & Suites</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="header__lang">
+              EN
+            </div>
+          </div>
+        </div>
+        <div class="header__slider">
+          <div class="header__slider-item slider__item" style="background-image: url(images/header/hotel-slider1.jpg)">
+            <div class="container">
+              <div class="slider__item-content">
+                <div class="slider__item-title">
+                  Pellentesque aliquam nibh at aliquam vehicula
+                </div>
+                <div class="slider__item-subtitle">
+                  Amazing place to discover
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__slider-item slider__item" style="background-image: url(images/header/hotel-slider2.jpg)">
+            <div class="container">
+              <div class="slider__item-content">
+                <div class="slider__item-title">
+                  Pellentesque aliquam nibh at aliquam vehicula
+                </div>
+                <div class="slider__item-subtitle">
+                  Amazing place to discover
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__slider-item slider__item" style="background-image: url(images/header/hotel-slider3.jpg)">
+            <div class="container">
+              <div class="slider__item-content">
+                <div class="slider__item-title">
+                  Pellentesque aliquam nibh at aliquam vehicula
+                </div>
+                <div class="slider__item-subtitle">
+                  Amazing place to discover
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__slider-item slider__item" style="background-image: url(images/header/hotel-slider4.jpg)">
+            <div class="container">
+              <div class="slider__item-content">
+                <div class="slider__item-title">
+                  Pellentesque aliquam nibh at aliquam vehicula
+                </div>
+                <div class="slider__item-subtitle">
+                  Amazing place to discover
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
       <!-- end header -->
-      
       <!-- start content -->
-      <section>
-        
+      <section class="bookup">
+        <div class="container">
+          <div class="bookup__inner">
+            <div class="bookup__content">
+              <h3 class="bookup__title">
+                Book a room online
+              </h3>
+              <div class="bookup__text">
+                Lorem ispum solor sid
+                ahmed loresin vane.
+              </div>
+            </div>
+            <div class="bookup__form">
+              <form>
+                <div class="form__content">
+                  Type of room:
+                  <select required>
+                    <option>Select a type of room</option>
+                  </select>
+                </div>
+                <div class="form__content form__content-inner">
+                  Check-in date:
+                  <input type="text" placeholder="DD/MM/YYYY" required>
+                </div>
+                <div class="form__content form__content-inner">
+                  Check-out date:
+                  <input type="text" placeholder="DD/MM/YYYY" required>
+                </div>
+                <div class="form__content">
+                  Adults:
+                  <select class="form__adults" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form__content">
+                  Children:
+                  <select class="form__number" required>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="submit">Book now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rooms">
+        <div class="container">
+          <div class="rooms__columns">
+            <div class="rooms__column">
+              <div class="rooms__column-image">
+                <img src="images/rooms/single-room.jpg" alt="room">
+              </div>
+              <div class="rooms__column-title">
+                Single room <span>110 €</span>
+              </div>
+              <div class="rooms__column-text">
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat.
+              </div>
+            </div>
+            <div class="rooms__column">
+              <div class="rooms__column-image">
+                <img src="images/rooms/double-room.jpg" alt="room">
+              </div>
+              <div class="rooms__column-title">
+                Double room <span>180 €</span>
+              </div>
+              <div class="rooms__column-text">
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat.
+              </div>
+            </div>
+            <div class="rooms__column">
+              <div class="rooms__column-image">
+                <img src="images/rooms/suite-room.jpg" alt="room">
+              </div>
+              <div class="rooms__column-title">
+                Suite room <span>210 €</span>
+              </div>
+              <div class="rooms__column-text">
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat.
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- end content -->
     </div>
 
     <footer class="footer">
-      
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copy">
+            © 2012 Paradise Hotel. All Rights Reserved.
+          </div>
+          <div class="footer__social">
+            <a href="#" class="icon-twitter"></a>
+            <a href="#" class="icon-facebook"></a>
+            <a href="#" class="icon-youtube"></a>
+            <a href="#" class="icon-flickr"></a>
+            <a href="#" class="icon-pinterest-p"></a>
+          </div>
+          <ul class="footer__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rooms & Suites</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </div>
 
@@ -34,6 +222,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

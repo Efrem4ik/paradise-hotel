@@ -1,16 +1,64 @@
 @font-face {
-  font-family: "DaxCondensed-Light", sans-serif;
+  font-family: "DaxCondensed-Light";
 
-  src: url("./fonts/DaxCondensedLight.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/DaxCondensedLight.woff2") format("woff2"); /* Modern Browsers */
+  src: url("../fonts/DaxCondensedLight.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/DaxCondensedLight.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "DaxCondensed-Regular", sans-serif;
+  font-family: "DaxCondensed-Black";
 
-  src: url("./fonts/DaxCondensedRegular.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/DaxCondensedRegular.woff2") format("woff2"); /* Modern Browsers */
+  src: url("../fonts/DaxCondensedBlack.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/DaxCondensedBlack.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8lnese');
+  src:  url('../fonts/icomoon.eot?8lnese#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8lnese') format('truetype'),
+    url('../fonts/icomoon.woff?8lnese') format('woff'),
+    url('../fonts/icomoon.svg?8lnese#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-table2:before {
+  content: "\ea71";
+}
+.icon-flickr:before {
+  content: "\eaa3";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-pinterest-p:before {
+  content: "\f231";
 }

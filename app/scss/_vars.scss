@@ -1,4 +1,5 @@
 $text: #373535;
+$text-o: #838383;
 $blue: #32a2e3;
 
 
@@ -17,8 +18,10 @@ $blue: #32a2e3;
   font-weight: 700;
 }
 @mixin d400{
-  font-family: "DaxCondensed-Regular", sans-serif;
+  font-family: "DaxCondensed-Black";
+  font-weight: 400;
 }
 @mixin d300{
-  font-family: "DaxCondensed-Light", sans-serif;
+  font-family: "DaxCondensed-Light";
+  font-weight: 300;
 }
