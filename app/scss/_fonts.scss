@@ -41,17 +41,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-room_service:before {
+  content: "\e901";
+}
 .icon-search:before {
   content: "\e900";
 }
+.icon-droplet:before {
+  content: "\e90b";
+}
+.icon-connection:before {
+  content: "\e91b";
+}
 .icon-mobile:before {
   content: "\e958";
+}
+.icon-star-full:before {
+  content: "\e9d9";
 }
 .icon-table2:before {
   content: "\ea71";
 }
 .icon-flickr:before {
   content: "\eaa3";
+}
+.icon-leaf:before {
+  content: "\f06c";
 }
 .icon-comments:before {
   content: "\f086";
@@ -67,6 +82,9 @@
 }
 .icon-envelope:before {
   content: "\f0e0";
+}
+.icon-smile-o:before {
+  content: "\f118";
 }
 .icon-youtube:before {
   content: "\f167";

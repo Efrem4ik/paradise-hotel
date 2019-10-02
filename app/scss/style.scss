@@ -148,12 +148,14 @@
     }
   }
 }
-.about__inner{
+.about__inner,
+.rooms__inner{
   display: flex;
   justify-content: space-between;
   margin-top: 45px;
 }
-.about__content{
+.about__content,
+.rooms__content{
   max-width: 673px;
   &-title{
     h3{
@@ -212,7 +214,8 @@
     line-height: 20px;
   }
 }
-.about__aside{
+.about__aside,
+.rooms__aside{
   max-width: 237px;
   &-title{
     font-size: 15px;
@@ -351,6 +354,142 @@
   }
 }
 // end about-page
+// start rooms page
+.rooms__second-content{
+  display: flex;
+  justify-content: space-between;
+}
+.room__aside-inner{
+  padding-bottom: 0;
+}
+.room__content{
+  border-top: 2px dashed #cfcece;
+  margin-top: 43px;
+  padding-top: 50px;
+  &-item{
+    width: 198px;
+  }
+  &-image{
+    position: relative;
+    background-color: #000;
+    margin-bottom: 20px;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 149px;
+      background: rgba(0,0,0,.8);
+      background-image: url(../images/icons/play-ico.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+    img{
+     width: 198px;
+     height: 149px;
+     display: block;
+  }
+  &-title{
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  &-text{
+    color: $text-o;
+  }
+}
+.rooms__aside-title{
+  margin-bottom: 21px;
+}
+.rooms__aside-list{
+  // position: relative;
+  max-width: 209px;
+  margin-bottom: 49px;
+  li{
+    border-bottom: 1px solid $text-o;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    position: relative;
+    &:last-child{
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    &:hover a::after{
+      color: $blue;
+    }
+  }
+  a{
+    color: $text-o;
+    line-height: 18px;
+    max-width: 159px;
+    // border-bottom: 1px solid $text-o;
+  }
+}
+.aside__free-wifi{
+  &::after{
+    content: '\e91b';
+    font-family: 'icomoon';
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+  }
+}
+.aside__free-spa{
+  &::after{
+    content: '\f06c';
+    font-family: 'icomoon';
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+}
+.aside__free-water{
+  &::after{
+    content: '\e90b';
+    font-family: 'icomoon';
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+}
+.aside__free-serivce{
+  &::after{
+    content: '\e901';
+    font-family: 'icomoon';
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+  }
+}
+.aside__free-tv{
+  &::after{
+    content: '\e9d9';
+    font-family: 'icomoon';
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+}
+.aside__free-dining{
+  &::after{
+    content: '\f118';
+    font-family: 'icomoon';
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+}
+// end rooms page
 // start about>location
 .location__box{
   .navigation{

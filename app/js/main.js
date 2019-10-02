@@ -11,6 +11,8 @@ $(function () {
     slidesToScroll: 1,
   });
 
+  
+
   //  $('.slider-for').slick({
   //   slidesToShow: 1,
   //   slidesToScroll: 1,
@@ -34,7 +36,7 @@ $(function () {
   //   $('.about__tabs .tabs').find('.tab').removeClass('active');
   //   $(this).addClass('active');
   //   $('#'+id).addClass('active-tab').fadeIn();
-  //   return false;
+  //   return false; Табы
   // });
 
 });
