@@ -258,8 +258,7 @@
   }
 }
 .aside__reservations{
-  // position: relative;
-  select{
+  select {
     padding: 8px 11px;
     width: 206px;
     border-radius: 3px;
@@ -352,7 +351,29 @@
   }
 }
 // end about-page
-
+// start about>location
+.location__box{
+  .navigation{
+    min-width: 981px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about__nav{
+    background-image: url(../images/line-location.png);
+  }
+}
+.location__map{
+  iframe{
+    width: 100%;
+  }
+}
+.location{
+ .header__body-title{
+   width: 540px;
+ }
+}
+// end about>location
 //start contacts
 .contacts{
   display: flex;
