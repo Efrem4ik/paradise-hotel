@@ -41,9 +41,10 @@
   }
 }
 .slick-slider{
-  height: 590px;
-  margin-top: -16px;
-  // margin-bottom: 16px;
+  &.header__slider{
+    height: 590px;
+    margin-top: -16px;  
+  }
 }
 .header__slider-item{
   background-size: cover;
@@ -407,7 +408,6 @@
   margin-bottom: 21px;
 }
 .rooms__aside-list{
-  // position: relative;
   max-width: 209px;
   margin-bottom: 49px;
   li{
@@ -428,7 +428,6 @@
     color: $text-o;
     line-height: 18px;
     max-width: 159px;
-    // border-bottom: 1px solid $text-o;
   }
 }
 .aside__free-wifi{
@@ -490,6 +489,85 @@
   }
 }
 // end rooms page
+
+// start page rooms slider
+.rooms__slider{
+  position: relative;
+  height: 500px;
+}
+.slider-rooms__title{
+  font-size: 20px;
+  @include d300;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 18px;
+  padding-right: 83px;
+  width: 479px;
+  text-align: right;
+  background-color: $blue;
+  clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
+  position: absolute;
+  z-index: 2;
+  top: 17px;
+}
+.slider__big-item,
+.slider__nav-item{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.slick-slider{
+  .slider__big-item{
+    margin-top: -17px;
+  }
+}
+.slick-slide{
+  .slider__nav-item{
+    height: 70px;
+    min-width: 95px;
+    margin-left: 20px;
+    border-radius: 4px;
+    margin: 0 auto;
+    opacity: .7;
+    cursor: pointer;
+    &:hover{
+      box-shadow: 0 0 13px rgba(256, 256, 256, 0.54);
+      opacity: 1;
+    }
+  }
+}
+.slider__nav.slick-initialized.slick-slider{
+  .slick-track{
+    .slick-slide{
+      margin-right: 20px;
+    }
+  }
+}
+.slider__nav{
+  top: -100px;
+  right: 11%;
+}
+.slider__big.slick-initialized.slick-slider{
+  height: 500px;
+  margin-top: -17px;
+}
+.rooms__aside-features{
+  max-width: 209px;
+  margin-bottom: 49px;
+  li{
+    padding-left: 4px;
+    border-bottom: 1px solid $text-o;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
+  a{
+    color: $text-o;
+  }
+}
+// end page rooms slider
+
 // start about>location
 .location__box{
   .navigation{

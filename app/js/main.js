@@ -11,23 +11,21 @@ $(function () {
     slidesToScroll: 1,
   });
 
-  
-
-  //  $('.slider-for').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   fade: true,
-  //   asNavFor: '.slider-nav'
-  // });
-  // $('.slider-nav').slick({
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   asNavFor: '.slider-for',
-  //   dots: true,
-  //   centerMode: true,
-  //   focusOnSelect: true
-  // }); Двойной слайдер!
+   $('.slider__big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.slider__nav'
+  });
+  $('.slider__nav').slick({
+    slidesToShow: 4,
+    asNavFor: '.slider__big',
+    centerMode: true,
+    variableWidth: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
 
 
   // $('.about__tabs .tab').on('click', function(event) {
