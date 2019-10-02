@@ -41,11 +41,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\e900";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
 .icon-table2:before {
   content: "\ea71";
 }
 .icon-flickr:before {
   content: "\eaa3";
+}
+.icon-comments:before {
+  content: "\f086";
 }
 .icon-twitter:before {
   content: "\f099";
@@ -55,6 +64,9 @@
 }
 .icon-facebook-f:before {
   content: "\f09a";
+}
+.icon-envelope:before {
+  content: "\f0e0";
 }
 .icon-youtube:before {
   content: "\f167";
