@@ -135,18 +135,44 @@
   justify-content: center;
   background-image: url(../images/line.png);
   @include o300;
+  font-size: 15px;
   &-list{
     li{
       display: inline-block;
       & + li{
-        padding-left: 27px;
+        padding-left: 28px;
       }
     }
     a{
       color: $text;
       &.active{
         @include o700;
+        span{
+          padding: 5px 10px;
+          background-color: $blue;
+          border-radius: 50%;
+          margin-right: 9px;
+          text-align: center;
+          color: #fff;
+        }
       }
+    }
+    span{
+      margin-right: 9px;
+    }
+  }
+}
+.reservation__nav-list{
+  li{
+    & + li{
+      padding-left: 33px;
+    }
+  }
+  a{
+    color: rgba(49, 53, 56, .5);
+    &.active{
+      @include o400;
+      color: #313538;
     }
   }
 }
@@ -157,7 +183,8 @@
   margin-top: 45px;
 }
 .about__content,
-.rooms__content{
+.rooms__content,
+.services__content{
   max-width: 673px;
   &-title{
     h3{
@@ -593,6 +620,401 @@
  }
 }
 // end about>location
+// start hotel-services page
+  .services__content-title{
+    margin-top: 41px;
+    h3{
+      span{
+        text-transform: lowercase;
+        font-weight: 800;
+      }
+    }
+  }
+  .services__info{
+    text-align: center;
+  }
+  .services__content{
+    border-top: 2px dashed #cfcece;
+    margin-top: 43px;
+    padding-top: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 109px;
+    &-item{
+      width: 299px;
+    }
+    &-image{
+      margin-bottom: 20px;
+      position: relative;
+      img{
+        display: block;
+        width: 298px;
+        height: 149px;
+        border-radius: 4px;
+      }
+    }
+    .room__content-text{
+      max-width: 261px;
+      margin-bottom: 48px;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 149px;
+      background: rgba(0,0,0,.8);
+      background-image: url(../images/icons/play-ico.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+      opacity: 0;
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+// end hotel-services page
+// start reservation page
+.reservation__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.basic__inner{
+  justify-content: center;
+}
+.reservation__content{
+  .main-title{
+    h3{
+      font-size: 20px;
+    }
+  }
+  .about__content-text{
+    padding-bottom: 37px;
+    margin-bottom: 40px;
+    border-bottom: 2px dashed #cfcece;
+  }
+}
+.reservation__basic{
+  max-width: 565px;
+}
+.form__item-check{
+  position: relative;
+  &::before{
+    content: '\ea71';
+    font-family: 'icomoon';
+    font-size: 18px;
+    color: $text-o;
+    position: absolute;
+    bottom: 39%;
+    right: 10px;
+  }
+}
+.reservation__form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 203px;
+  label{
+    display: block;
+    @include o700;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  input{
+    width: 270px;
+    height: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #d6d4d4;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.62);
+    border-radius: 3px;
+    padding-left: 11px;
+    padding-right: 25px;
+  }
+  select{
+    width: 125px;
+    height: 35px;
+    border: 1px solid #d6d4d4;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.62);
+    border-radius: 3px;
+    padding-left: 11px;
+    padding-right: 9px;
+    margin-bottom: 80px;
+  }
+  button{
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 207px;
+    @include o700;
+    font-size: 14px;
+    color: #fff;
+    background-color: $blue;
+    border: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+}
+.reservation{
+  margin-bottom: 177px;
+  .about__nav{
+    margin-bottom: 41px;
+  }
+}
+.reservation__select{
+  max-width: 675px;
+  margin-right: 69px;
+}
+.reservation__content-item{
+  max-width: 674px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 4px;
+  margin-bottom: 22px;
+}
+.reservation-content{
+  &__box{
+    height: auto;
+    padding-left: 190px;
+    border-right: 1px solid $text-o;
+  }
+  &__info{
+    padding-left: 19px;
+  }
+}
+.content-info{
+  &__title{
+    font-size: 17px;
+    @include o700;
+    margin: 20px 0 16px;
+  }
+  &__list{
+    column-count: 2;
+    column-gap: 40px;
+    margin-bottom: 40px;
+    li{
+      color: $text-o;
+      margin-bottom: 8px;
+      padding-left: 13px;
+      position: relative;
+      &::before{
+        content: '•';
+        font-size: 25px;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  &__price{
+    font-size: 18px;
+    @include o700;
+    margin-right: 14px;
+    display: inline-block;
+  }
+  button{
+    display: inline-block;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .select-button{
+    padding: 11px 0;
+    font-size: 14px;
+    @include o700;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    background-color: $blue;
+    border:none;
+    width: 132px;
+  }
+  .selected-button{
+    padding: 11px 0;
+    font-size: 14px;
+    @include o700;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    background-color: #d8d8d8;
+    border:none;
+    width: 132px;
+  }
+}
+.reservation__content-button{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #313131;
+  font-size: 15px;
+  padding: 5px 0;
+  background-color: #ebebeb;
+  box-shadow: inset 0 0 0 rgba(125, 125, 125, 0.5), inset 0 0 98px rgba(0, 0, 0, 0.17);
+  border: none;
+  cursor: pointer;
+}
+.reservation__inner-line{
+  border-right: 1px solid $text-o;
+}
+.aside__inner-title{
+  font-size: 15px;
+  @include o700;
+  margin-bottom: 16px;
+}
+.aside-form{
+  max-width: 208px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  label{
+    display: block;
+    @include o700;
+    color: $text-o;
+    margin-bottom: 9px;
+  }
+  input{
+    border: 1px solid #d6d4d4;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.62);
+    width: 206px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+  }
+  select{
+    width: 57px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+  }
+  button{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    @include o700;
+    color: #fff;
+    background-color: $blue;
+    border: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+.reservation__information{
+
+}
+.reservation-all__forms{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 36px;
+  margin-bottom: 35px;
+  border-bottom: 2px dashed #cfcece;
+  label{
+    display: block;
+    @include o700;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  input{
+    width: 270px;
+    height: 35px;
+    margin-bottom: 17px;
+    border-radius: 4px;
+    border: 1px solid #d6d4d4;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.62);
+    background-color: #ffffff;
+  }
+  select{
+    width: 270px;
+    height: 35px;
+    margin-bottom: 17px;
+    border-radius: 4px;
+    border: 1px solid #d6d4d4;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.62);
+    background-color: #ffffff;
+  }
+}
+.form-email__text{
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: $text-o;
+}
+.reservation-cart__title{
+  font-size: 20px;
+  @include o300;
+  margin-bottom: 18px;
+}
+.reservation-cart__text{
+  line-height: 20px;
+  color: $text-o;
+  margin-bottom: 17px;
+}
+.cart-reservation__select{
+  select{
+    width: 128px;
+    margin-right: 10px;
+  }
+}
+.reservation-continue,
+.reservation-back{
+  width: 207px;
+  padding: 12px 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+  color: #fff;
+  @include o700;
+  font-size: 14px;
+  text-align: center;
+  background-color: $blue;
+  display: inline-block;
+  margin: 0 auto;
+}
+.reservation-back{
+  background-color: #d8d8d8;
+  margin-right: 11px;
+}
+.center-lo{
+  margin-left: 70px;
+}
+.reservation__finish{
+  max-width: 590px;
+}
+.reservation__finish-title{
+  margin-top: 153px;
+  color: #148bd1;
+  font-size: 20px;
+  width: 589px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #bcd7e7;
+  border: 1px solid #a7c6de;
+  border-radius: 4px;
+  margin-bottom: 19px;
+}
+.reservation__finish-info{
+  text-align: right;
+  display: inline-block;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #2a2e34;
+  line-height: 18px;
+  margin-right: 15px;
+  a{
+    color: #000;
+    @include o700;
+  }
+}
+.reservation__back-home{
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  @include o700;
+  background-color: $blue;
+  width: 207px;
+  text-align: center;
+  padding: 10px 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  vertical-align: top;
+}
+// end reservation page
 //start contacts
 .contacts{
   display: flex;
