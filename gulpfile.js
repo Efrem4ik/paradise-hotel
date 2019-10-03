@@ -15,7 +15,7 @@ gulp.task('sass', function () {
       overrideBrowserslist: ['last 8 versions']
     }))
     .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({stream: true }))
 });
 
 gulp.task('script', function() {
@@ -27,7 +27,7 @@ gulp.task('script', function() {
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))
 });
-gulp.task('script', function() {
+gulp.task('script-js', function() {
   return gulp.src(['app/js/main.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -70,4 +70,4 @@ gulp.task('watch', function () {
   gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('default', gulp.parallel('sass', 'watch', 'browser-sync', 'script', 'style'))
+gulp.task('default', gulp.parallel('sass', 'watch', 'browser-sync', 'script', 'style', 'script-js'))

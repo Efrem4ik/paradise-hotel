@@ -16,12 +16,11 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    asNavFor: '.slider__nav'
+    // asNavFor: '.slider__nav'
   });
   $('.slider__nav').slick({
     slidesToShow: 4,
     asNavFor: '.slider__big',
-    centerMode: true,
     variableWidth: true,
     centerMode: true,
     focusOnSelect: true
