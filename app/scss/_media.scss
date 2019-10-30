@@ -1,0 +1,148 @@
+@media(max-width: 1200px){
+  .slider__item-content{
+    margin-top: 400px;
+  }
+}
+@media(max-width: 1000px){
+  .bookup{
+    margin-bottom: 170px;
+  }
+  .form__bookup{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .bookup__form-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .rooms__columns{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .rooms__column{
+    padding-right: 15px;
+    margin-bottom: 20px;
+  }
+  .rooms{
+    margin-bottom: 50px;
+  }
+}
+@media(max-width: 830px){
+  .header__menu-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .header__menu{
+    width: 100%;
+    ul{
+      position: absolute;
+      display: none;
+      z-index: 3;
+      top: 90px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-bottom: 5px solid $blue;
+      background-color: $text;
+    }
+    li{
+      font-size: 18px;
+      display: block;
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid $blue;
+      padding-right: 0;
+      margin-right: 0;
+      & + li {
+        margin: 0;
+        padding-right: 0;
+      }
+    }
+    a{
+      display: block;
+      padding: 20px;
+    }
+  }
+  .footer__inner{
+    display: block;
+    text-align: center;
+  }
+  .footer__social{
+    margin: 20px 0;
+  }
+  .footer__list{
+    margin-bottom: 20px;
+    li{
+      & + li{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+@media(max-width: 670px){
+  .slider__item-title{
+    font-size: 18px;
+    width: 400px;
+  }
+  .slider__item-subtitle{
+    font-size: 14px;
+    width: 200px;
+  }
+  .bookup{
+    margin-bottom: 390px;
+  }
+  .form__bookup{
+    button{
+      margin-top: 0;
+    }
+    label{
+      display: inline-block;
+    }
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .bookup__form-item{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    input{
+      margin-right: 0;
+    }
+    select{
+      margin-right: 0;
+    }
+  }
+  .rooms__column{
+    max-width: 70%;
+    text-align: center;
+    &-text{
+      max-width: 100%;
+    }
+  }
+}
+@media(max-width: 500px){
+  .bookup__content{
+    display: none;
+    max-width: 170px;
+    h3{
+      font-size: 14px;
+    }
+  }
+  .rooms__column{
+    max-width: 100%;
+  }
+}
+@media(max-width: 440px){
+  .slider__item-title{
+    line-height: 20px;
+    font-size: 16px;
+    width: 270px;
+  }
+  .slider__item-subtitle{
+    font-size: 14px;
+    width: 200px;
+  }
+}

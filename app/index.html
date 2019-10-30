@@ -21,7 +21,12 @@
             <div class="header__logo">
               <a href="index.html"><img src="images/header-logo.png" alt="Logotype"></a>
             </div>
-            <div class="header__menu">
+            <nav class="header__menu">
+              <div class="header__menu-btn">
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+              </div>
               <ul class="menu__list">
                 <li><a href="about.html">Hotel</a></li>
                 <li><a href="rooms-suites.html">Rooms & Suites</a></li>
@@ -29,7 +34,7 @@
                 <li><a href="#">Activities</a></li>
                 <li><a href="contacts.html">Contact</a></li>
               </ul>
-            </div>
+            </nav>
             <div class="header__lang">
               <a href="#">EN</a>
             </div>
@@ -103,40 +108,39 @@
               </div>
             </div>
             <div class="bookup__form">
-              <form>
-                <div class="form__content">
-                  Type of room:
-                  <select required>
+              <form class="form__bookup">
+                <div class="bookup__form-item">
+                  <label for="typeroom">Type of room:</label>
+                  <select name="typeroom">
+                    <option>Select a type of room</option>
+                    <option>Select a type of room</option>
                     <option>Select a type of room</option>
                   </select>
                 </div>
-                <div class="form__content form__content-inner">
-                  Check-in date:
-                  <input type="text" placeholder="DD/MM/YYYY" required>
+                <div class="bookup__form-item">
+                  <label for="indate">Check-in date:</label>
+                  <input type="text" placeholder="DD/MM/YYYY">
                 </div>
-                <div class="form__content form__content-inner">
-                  Check-out date:
-                  <input type="text" placeholder="DD/MM/YYYY" required>
+                <div class="bookup__form-item">
+                  <label for="indate">Check-out date:</label>
+                  <input type="text" placeholder="DD/MM/YYYY">
                 </div>
-                <div class="form__content">
-                  Adults:
-                  <select class="form__adults" required>
+                <div class="bookup__form-item">
+                  <label for="adults">Adults:</label>
+                  <select name="adults" class="bookup__form-mod">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5</option>
                   </select>
                 </div>
-                <div class="form__content">
-                  Children:
-                  <select class="form__number" required>
-                    <option>0</option>
+                <div class="bookup__form-item">
+                  <label for="Children">Children:</label>
+                  <select name="Children" class="bookup__form-mod">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5</option>
                   </select>
                 </div>
                 <button type="submit">Book now</button>
